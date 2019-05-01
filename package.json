@@ -1,0 +1,30 @@
+{
+  "name": "instagram_downloader",
+  "version": "2.0.0",
+  "description": "download img from my crush's instagram",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "keywords": [
+    "instagram",
+    "nodejs",
+    "img"
+  ],
+  "author": "hieu",
+  "license": "MIT",
+  "dependencies": {
+    "image-downloader": "^3.4.2",
+    "nodemon": "^1.18.11",
+    "puppeteer": "^1.14.0",
+    "puppeteer-autoscroll-down": "^0.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hieunguyen1053/Instagram_Downloader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hieunguyen1053/Instagram_Downloader/issues"
+  },
+  "homepage": "https://github.com/hieunguyen1053/Instagram_Downloader#readme"
+}
