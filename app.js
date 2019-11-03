@@ -4,9 +4,10 @@ const downloader = require('image-downloader');
 const fs = require('fs');
 
 const getPosts = require("./util/getPostLinks");
-const account = require('./private/account.json');
+// const account = require('./private/account.json');
 
 launch = async (link) => {
+    createResultFolder();
     const browser = await puppeteer.launch({ headless: false, defaultViewport: { width: 1280, height: 720 } });
     const page = await browser.newPage();
     // await login(page, account);
@@ -53,4 +54,10 @@ getImgs = async (page, post) => {
     });
 }
 
-launch('https://www.instagram.com/vxcthu/');
+createResultFolder = () => {
+    if (!fs.existsSync("./result")) {
+        fs.mkdirSync("./result");
+    }
+}
+
+launch('link instagram you want to get');
